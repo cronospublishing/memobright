@@ -5,6 +5,7 @@
     <title>New Year's Flash Hit</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <!-- HEADER -->
     <div class="hit-header">
@@ -13,7 +14,7 @@
 
     <!-- OFFER BOX -->
     <section class="offer-box">
-      <div class="offer-content">
+      <div class="container offer-content">
         <!-- PRODUTO -->
         <div class="offer-product">
           <img src="./assets/products.png" alt="Memo Bright Product" />
@@ -39,55 +40,53 @@
           </div>
 
           <div class="total-price">$49.95</div>
-
           <div class="shipping">+ FREE SHIPPING</div>
         </div>
       </div>
     </section>
 
-    <button class="cta-button">
-      🚀 YES! ADD TO MY ORDER NOW
-      <span class="cta-subtext">
-        (Get 2 Bottles + Free FBI Guide for just $49.95)
-      </span>
-    </button>
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <button class="cta-button">
+          YES! ADD TO MY ORDER NOW
+          <span class="cta-subtext">
+            (Get 2 Bottles + Free FBI Guide for just $49.95)
+          </span>
+        </button>
 
-    <div class="cta-decline">
-      <span>
-        No thanks, I decline this New Year's Flash Hit offer, or show me the
-        guarantee.
-      </span>
-    </div>
+        <div class="cta-decline">
+          No thanks, I decline this New Year's Flash Hit offer, or show me the
+          guarantee.
+        </div>
+      </div>
+    </section>
 
     <!-- TIMER BAR -->
-    <section class="timer-bar">
-      <img src="./assets/clock.png" alt="Clock" class="timer-icon left" />
+    <section class="timer-section">
+      <div class="container">
+        <div class="timer-bar">
+          <img src="./assets/clock.png" alt="Clock" width="65" />
 
-      <span class="timer-text">
-        SPECIAL OFFER: <span id="timer">10:00</span>
-      </span>
+          <span class="timer-text">
+            SPECIAL OFFER: <span id="timer">10:00</span>
+          </span>
 
-      <img
-        src="./assets/hourglass.png"
-        alt="Hourglass"
-        class="timer-icon right"
-      />
+          <img src="./assets/hourglass.png" alt="Hourglass" width="55" />
+        </div>
+      </div>
     </section>
 
     <!-- GUIDE SECTION -->
     <section class="guide-section">
-      <div class="guide-content">
-        <!-- IMAGEM DO GUIA -->
-        <div class="guide_leftcontainer">
-          <div class="guide-left">
-            <img
-              src="./assets/guide.png"
-              alt="Secret FBI Memory Trick"
-              class="guide-image"
-            />
-          </div>
+      <div class="container guide-content">
+        <div class="guide-leftcontainer">
+          <img
+            src="./assets/guide.png"
+            alt="Secret FBI Memory Trick"
+            class="guide-image"
+          />
 
-          <!-- TEXTO -->
           <div class="guide-text">
             <strong>INCLUDED FREE:</strong>
             <h3>The Secret FBI Memory Trick</h3>
@@ -100,7 +99,6 @@
           </div>
         </div>
 
-        <!-- BADGES -->
         <div class="badges-area">
           <p class="badges-text">
             Unlock the classified cognitive techniques used by elite
@@ -111,7 +109,5 @@
         </div>
       </div>
     </section>
-
-    <script src="script.js"></script>
   </body>
 </html>
