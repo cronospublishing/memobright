@@ -1,0 +1,155 @@
+:root {
+  --blue: #0f172a;
+  --gold1: #f5d27a;
+  --gold2: #caa24d;
+  --orange: #f59e0b;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f9fafb;
+  color: #111;
+}
+
+/* HEADER */
+.header-top {
+  background: var(--blue);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  padding: 18px 16px;
+}
+
+.header-top .icon {
+  font-size: 20px;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.header-alert {
+  background: linear-gradient(90deg, var(--gold1), var(--gold2));
+  color: #000;
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+}
+
+.header-alert strong {
+  display: block;
+  font-weight: 900;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 32px 16px 60px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  background: #fff;
+  border: 2px dashed var(--gold2);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.product-card img {
+  max-width: 120px;
+  margin-bottom: 12px;
+}
+
+.product-card h4 {
+  margin: 10px 0 6px;
+}
+
+.price {
+  margin-bottom: 12px;
+}
+
+.price strong {
+  color: #16a34a;
+}
+
+/* BADGES */
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 11px;
+  font-weight: 900;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.badge.gold {
+  background: linear-gradient(90deg, var(--gold1), var(--gold2));
+}
+
+.badge.blue {
+  background: var(--blue);
+  color: #fff;
+}
+
+/* CTA */
+.add-btn {
+  background: #16a34a;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* VALUE BOX */
+.value-box {
+  margin-top: 48px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.value-box h2 span {
+  color: var(--gold2);
+}
+
+.value-products {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.value-products img {
+  max-width: 100px;
+}
+
+.shipping-note {
+  font-size: 13px;
+  color: #4b5563;
+}
