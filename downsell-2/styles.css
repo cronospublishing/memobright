@@ -1,0 +1,139 @@
+:root {
+  --blue: #0f172a;
+  --gold1: #f5d27a;
+  --gold2: #ad8632;
+  --red: #c0162b;
+  --beige: #f7f2e8;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--blue);
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* TOP BAR */
+.top-bar {
+  background: var(--red);
+  text-align: center;
+  padding: 10px;
+  font-weight: 900;
+  font-size: 12px;
+}
+
+/* CONFETTI */
+.gold-confetti {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(
+      circle,
+      rgba(255, 215, 120, 0.9) 2px,
+      rgba(255, 215, 120, 0.35) 6px,
+      transparent 10px
+    ),
+    radial-gradient(
+      circle,
+      rgba(245, 210, 122, 0.8) 3px,
+      rgba(245, 210, 122, 0.3) 8px,
+      transparent 14px
+    );
+  background-size: 160px 160px, 120px 120px;
+  opacity: 0.2;
+}
+
+/* LAYOUT */
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 32px 16px 60px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--gold2);
+}
+
+/* HERO IMAGE */
+.hero-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 220px;
+  /* height: auto; */
+}
+
+/* APPROVED STAMP */
+.approved-stamp {
+  display: inline-block;
+  margin: 8px 0 20px;
+  padding: 10px 16px;
+  border: 3px solid var(--gold2);
+  color: var(--gold2);
+  font-weight: 900;
+  letter-spacing: 1px;
+  transform: rotate(-6deg);
+}
+
+/* CONTENT BOX */
+.content-box {
+  background: var(--beige);
+  color: #111;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.body-copy {
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+/* RECEIPT */
+.receipt {
+  text-align: left;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+
+.override {
+  color: #c0162b;
+  font-weight: 900;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 900;
+  margin-top: 12px;
+}
+
+/* CTA */
+.cta {
+  width: 100%;
+  margin-top: 25px;
+  padding: 18px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(90deg, var(--gold2), var(--gold1), var(--gold2));
+  font-weight: 900;
+  cursor: pointer;
+}
