@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap");
+
+:root {
+  --blue: #0f172a;
+  --gold1: #f5d27a;
+  --gold2: #caa24d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--blue);
+  color: #fff;
+  min-height: 100vh;
+  font-family: "Playfair Display", serif;
+}
+
+/* BACKGROUND */
+.bg-effects {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background-image: radial-gradient(
+      circle,
+      rgba(255, 215, 120, 0.9) 2px,
+      transparent 10px
+    ),
+    radial-gradient(circle, rgba(245, 210, 122, 0.7) 3px, transparent 14px);
+  background-size: 180px 180px, 260px 260px;
+  opacity: 0.18;
+}
+
+/* LAYOUT */
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 420px;
+  margin: auto;
+  padding: 40px 16px 60px;
+  text-align: center;
+}
+
+.headline {
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--gold1);
+  margin-bottom: 10px;
+}
+
+.subheadline {
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+
+/* WHEEL */
+.wheel-wrapper {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto 32px;
+  filter: drop-shadow(0 0 18px rgba(245, 210, 122, 0.35));
+}
+
+#wheelCanvas {
+  display: block;
+  margin: auto;
+}
+
+/* POINTER */
+.pointer {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 28px solid var(--gold1);
+}
+
+/* CTA */
+.cta {
+  width: 100%;
+  padding: 18px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(90deg, var(--gold1), var(--gold2));
+  color: #000;
+  font-weight: 900;
+  font-size: 15px;
+  cursor: pointer;
+}
