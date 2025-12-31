@@ -2,108 +2,103 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Year's Flash Hit</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <!-- HEADER -->
-    <div class="hit-header">
-      <picture>
-        <source media="(max-width: 768px)" srcset="./assets/banner.png" />
-        <img src="./assets/banner2.png" alt="New Year’s Flash Hit Header" />
-      </picture>
-    </div>
+    <header class="hit-header">
+      <div class="confetti-container"></div>
 
-    <!-- OFFER BOX -->
-    <section class="offer-box">
-      <div class="container offer-content">
-        <div class="offer-product">
-          <img src="./assets/products.png" alt="Memo Bright Product" />
-        </div>
+      <span class="hit-eyebrow">🔥 LIMITED TIME OFFER</span>
 
-        <!-- INFO -->
-        <div class="offer-info">
-          <div class="price-top">
-            <span class="price-per">$25</span>
-            <span class="per-text">PER<br />BOTTLE</span>
-            <span class="star">★</span>
+      <h1 class="hit-title">NEW YEAR'S <span>FLASH HIT</span></h1>
+
+      <p class="hit-subtitle">2 Bottles + Digital Guide Included FREE</p>
+    </header>
+
+    <main class="container">
+      <!-- OFFER BOX -->
+      <section class="offer-box">
+        <img
+          src="assets/products.png"
+          alt="2 Bottles + Digital Guide"
+          class="product-image"
+        />
+
+        <div class="price-box">
+          <div class="price-main">
+            <span class="price-currency">$</span>
+            <span class="price-value">25</span>
+            <span class="price-unit">PER BOTTLE</span>
           </div>
 
-          <div class="save-text">YOU SAVE $80!</div>
-
-          <div class="guarantee">
-            <img src="./assets/guarantee.png" alt="180 Days Guarantee" />
+          <div class="price-sub">
+            <span class="price-badge">LIMITED NEW YEAR'S OFFER</span>
           </div>
 
-          <div class="total">
-            <span class="total-label">Total:</span>
-            <span class="total-old">$166</span>
-          </div>
-
-          <div class="total-price">$49.95</div>
-          <div class="shipping">+ FREE SHIPPING</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-section">
-      <button class="cta-button">
-        YES! ADD TO MY ORDER NOW
-        <span class="cta-subtext">
-          (Get 2 Bottles + Free FBI Guide for just $49.95)
-        </span>
-      </button>
-
-      <div class="cta-decline">
-        No thanks, I decline this New Year's Flash Hit offer, or show me the
-        guarantee.
-      </div>
-    </section>
-
-    <!-- TIMER BAR -->
-    <div class="timer-bar">
-      <img src="./assets/clock.png" alt="Clock" width="65" />
-
-      <span class="timer-text">
-        SPECIAL OFFER: <span id="timer">10:00</span>
-      </span>
-
-      <img src="./assets/hourglass.png" alt="Hourglass" width="55" />
-    </div>
-
-    <!-- GUIDE SECTION -->
-    <section class="guide-section">
-      <div class="container guide-content">
-        <div class="guide-leftcontainer">
           <img
-            src="./assets/guide.png"
-            alt="Secret FBI Memory Trick"
+            class="guarantee-img"
+            src="./assets/guarantee.png"
+            alt="180 Days Guarantee"
+          />
+        </div>
+
+        <!-- CTA 2 linhas -->
+        <button class="cta-btn" id="ctaButton">
+          <span class="cta-line-1">🚀 YES! ADD TO MY ORDER NOW</span>
+          <span class="cta-line-2">
+            (Get 2 Bottles + Free FBI Guide for just $49.95)
+          </span>
+        </button>
+
+        <div class="decline">
+          No thanks. I decline this New Year's Flash Hit offer, or show me the
+          guarantee.
+        </div>
+      </section>
+
+      <!-- TIMER -->
+      <div class="timer-bar">
+        <span class="icon">⏳</span>
+        <span id="timerText">SPECIAL OFFER: 10:00</span>
+        <span class="icon">🕛</span>
+      </div>
+
+      <!-- GUIDE SECTION -->
+      <section class="guide-section">
+        <div class="guide-left">
+          <img
+            src="assets/guide.png"
+            alt="The Secret FBI Memory Trick"
             class="guide-image"
           />
-
-          <div class="guide-text">
-            <strong>INCLUDED FREE:</strong>
-            <h3>The Secret FBI Memory Trick</h3>
-            <p>
-              Unlock the classified cognitive techniques used by elite
-              intelligence agents to recall names, faces, and codes instantly.
-              This guide trains your brain to store information like a steel
-              trap.
-            </p>
-          </div>
         </div>
 
-        <div class="badges-area">
-          <p class="badges-text">
+        <div class="guide-right">
+          <span class="guide-included">INCLUDED FREE:</span>
+
+          <h3 class="guide-title">The Secret FBI Memory Trick</h3>
+
+          <p class="guide-description">
             Unlock the classified cognitive techniques used by elite
             intelligence agents to recall names, faces, and codes instantly.
           </p>
 
-          <img src="./assets/badges.png" alt="Badges" class="badges-image" />
+          <p class="guide-description">
+            This cunning brain trick stores information like a steel trap — even
+            if you’ve struggled with memory before.
+          </p>
+
+          <div class="badges">
+            <img width="300" src="./assets/badges.png" />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>

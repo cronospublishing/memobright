@@ -1,15 +1,28 @@
-let time = 600; // 10:00 em segundos
-const timerEl = document.getElementById("timer");
+/* ================= TIMER ================= */
+let time = 10 * 60;
+const timerEl = document.getElementById("timerText");
 
-function updateTimer() {
-  const minutes = String(Math.floor(time / 60)).padStart(2, "0");
-  const seconds = String(time % 60).padStart(2, "0");
+setInterval(() => {
+  const m = Math.floor(time / 60);
+  const s = time % 60;
 
-  timerEl.textContent = `${minutes}:${seconds}`;
+  timerEl.textContent = `SPECIAL OFFER: ${m.toString().padStart(2, "0")}:${s
+    .toString()
+    .padStart(2, "0")}`;
 
-  if (time > 0) {
-    time--;
-  }
-}
+  if (time > 0) time--;
+}, 1000);
 
-setInterval(updateTimer, 1000);
+/* ================= CONFETTI ================= */
+const confettiContainer = document.querySelector(".confetti-container");
+const colors = ["gold", "silver", "blue"];
+
+setInterval(() => {
+  const c = document.createElement("div");
+  c.className = `confetti ${colors[Math.floor(Math.random() * colors.length)]}`;
+  c.style.left = Math.random() * 100 + "%";
+  c.style.animationDuration = 3 + Math.random() * 3 + "s";
+  confettiContainer.appendChild(c);
+
+  setTimeout(() => c.remove(), 6000);
+}, 180);
