@@ -38,7 +38,7 @@ body {
 /* OFFER BOX */
 .offer-box {
   padding: 40px 0;
-  display: flex;
+  /* display: flex; */
 }
 
 .offer-content {
