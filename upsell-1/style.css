@@ -70,7 +70,6 @@ body {
 /* DEAL BANNER */
 .deal-banner {
   width: 100%;
-  min-height: 96px;
 
   display: flex;
   align-items: center;
@@ -87,32 +86,50 @@ body {
   color: #111;
 }
 
-.deal-banner .left {
+.left {
   display: flex;
   flex-direction: column;
   line-height: 1.1;
 }
 
-.deal-banner .title {
+.title {
   font-size: 28px;
   font-weight: 800;
 }
 
-.deal-banner .right {
+.right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 
-.deal-banner .label {
+.label {
   font-size: 16px;
   font-weight: 600;
 }
 
-.deal-banner .timer {
+.timer {
   font-size: 28px;
   font-weight: 900;
   line-height: 1;
+}
+
+@media (max-width: 600px) {
+  .title,
+  .timer {
+    font-size: 20px;
+  }
+
+  .deal-banner {
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .timer,
+  .title {
+    font-size: 16px;
+  }
 }
 
 /* CARD */
@@ -237,30 +254,3 @@ body {
 }
 
 /* RESPONSIVO */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 24px;
-  }
-
-  .deal-banner {
-    flex-direction: column;
-    text-align: center;
-    border-radius: 20px;
-  }
-
-  .deal-banner .right {
-    align-items: center;
-  }
-
-  .deal-banner .title {
-    font-size: 22px;
-  }
-
-  .deal-banner .timer {
-    font-size: 24px;
-  }
-
-  .price {
-    font-size: 28px;
-  }
-}
