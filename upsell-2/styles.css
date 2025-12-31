@@ -175,6 +175,10 @@ h1 span {
   margin: 8px 0;
 }
 
+.item span {
+  color: #1a1a1a;
+}
+
 .free {
   color: #2ecc71;
 }
