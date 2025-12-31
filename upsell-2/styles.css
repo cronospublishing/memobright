@@ -199,6 +199,7 @@ h1 span {
   font-weight: 900;
   cursor: pointer;
   color: #000;
+  color: inherit;
 }
 
 .small {
