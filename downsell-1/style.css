@@ -1,13 +1,11 @@
-:root {
-  --container-width: 700px;
-}
-
 * {
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   background: #f7f0d4;
   color: #000;
@@ -15,10 +13,11 @@ body {
 
 /* CONTAINER PADRÃO */
 .container {
-  max-width: var(--container-width);
-  width: 100%;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 700px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 /* HEADER */
@@ -115,14 +114,17 @@ body {
 
 /* CTA */
 .cta-section {
+  display: flex;
   padding-bottom: 30px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cta-button {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
+  max-width: 700px;
   gap: 6px;
 
   background: linear-gradient(90deg, #c1902e 0%, #f6e27a 40%, #c1902e 100%);
@@ -135,7 +137,6 @@ body {
   font-size: 24px;
   font-weight: 900;
   color: #000;
-  text-align: center;
 }
 
 .cta-subtext {
@@ -144,7 +145,6 @@ body {
 
 .cta-decline {
   margin-top: 16px;
-  text-align: center;
   font-size: 16px;
   font-weight: 900;
   color: #202020;
@@ -157,8 +157,10 @@ body {
 
 .timer-bar {
   width: 100%;
-  padding: 12px 16px;
+  align-self: center;
 
+  max-width: 700px;
+  padding: 12px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
