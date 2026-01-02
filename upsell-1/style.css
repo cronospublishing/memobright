@@ -250,7 +250,141 @@ body {
 .footer img {
   width: 100%;
   max-width: 960px;
-  margin: 40px auto 80px;
+  margin: 40px auto 0;
 }
 
-/* RESPONSIVO */
+/* ================= GUARANTEE SECTION ================= */
+.guarantee-section {
+  position: relative;
+  padding: 60px 16px;
+  background: radial-gradient(
+      circle at top,
+      rgba(255, 215, 0, 0.15),
+      transparent 50%
+    ),
+    linear-gradient(135deg, #0b1e44, #050b1a);
+  color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* fogos simulados */
+.firework {
+  position: absolute;
+  top: 40px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(212, 175, 55, 0.8) 0%,
+    rgba(212, 175, 55, 0.4) 25%,
+    transparent 70%
+  );
+  opacity: 0.6;
+}
+
+.firework.left {
+  left: -40px;
+}
+
+.firework.right {
+  right: -40px;
+}
+
+/* título */
+.guarantee-title {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 32px;
+}
+
+/* conteúdo */
+.guarantee-content {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* selo 180 dias */
+.guarantee-badge {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f5d27a, #d4af37);
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  box-shadow: 0 0 0 6px rgba(212, 175, 55, 0.3);
+}
+
+.guarantee-badge span {
+  font-size: 38px;
+  line-height: 1;
+}
+
+.guarantee-badge small {
+  font-size: 14px;
+}
+
+.guarantee-badge p {
+  font-size: 12px;
+  margin: 4px 0 0;
+}
+
+/* texto */
+.guarantee-text {
+  max-width: 520px;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.guarantee-text p {
+  margin-bottom: 12px;
+}
+
+/* ícones inferiores */
+.guarantee-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.guarantee-icons .icon {
+  background: linear-gradient(135deg, #f5d27a, #d4af37);
+  color: #000;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  font-size: 11px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .guarantee-content {
+    text-align: center;
+  }
+
+  .guarantee-text {
+    text-align: center;
+  }
+
+  .guarantee-title {
+    font-size: 24px;
+  }
+}
